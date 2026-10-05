@@ -1,16 +1,17 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="mobile-web-app-capable" content="yes">
+  
+  <!-- Manifest WAJIB diletakkan di GitHub ini -->
+  <link rel="manifest" href='data:application/manifest+json,{"name":"Claundry POS","short_name":"Claundry","display":"standalone","start_url":".","background_color":"#ffffff","theme_color":"#0d6efd"}'>
+  
   <title>Claundry POS</title>
   <style>
-    body, html {
-      margin: 0;
-      padding: 0;
-      height: 100%;
-      overflow: hidden; /* Mencegah scroll ganda */
-    }
+    body, html { margin: 0; padding: 0; width: 100vw; height: 100vh; overflow: hidden; }
+    iframe { width: 100%; height: 100%; border: none; display: block; }
   </style>
 </head>
 <body>
